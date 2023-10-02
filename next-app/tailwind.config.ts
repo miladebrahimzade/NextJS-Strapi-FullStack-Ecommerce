@@ -8,7 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        'snow-white': '#FFFDFA',
+        'light-brown': '#BEA6A0',
+        'dark-brown': '#3A001E',
+      },
+      fontFamily: {
+        sans: ['var(--font-vazir)'],
+      },
     },
   },
   plugins: [],

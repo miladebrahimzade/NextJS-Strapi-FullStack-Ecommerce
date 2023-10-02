@@ -1,19 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '@/components/Button'
+
+import HomeSlider from '@/app/home/slider/HomeSlider'
+import CategorySection from './home/categories/CategorySection'
+import SpecialOffers from './home/offers/SpecialOffers'
+import ProductSlider from '@/components/productSlider/ProductSlider'
+import ScrollIcon from '@/components/ScrollIcon'
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <div>
-        <Link href='/shop'>Check Shop</Link>
-      </div>
-      <div>
-        <Link href='/blog'>Check blog</Link>
-      </div>
-      <div>
-        <Button />
-      </div>
-    </div>
+    <>
+      <HomeSlider />
+      <CategorySection />
+      {/* <SpecialOffers /> */}
+      {/* <ProductSlider /> */}
+      {/* <CategorySection /> */}
+      {/* <ProductSlider /> */}
+
+      {/* <ScrollIcon /> */}
+    </>
   )
 }

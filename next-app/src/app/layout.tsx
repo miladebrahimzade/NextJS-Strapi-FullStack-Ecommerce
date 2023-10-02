@@ -1,8 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Vazirmatn } from 'next/font/google'
+import MainHeader from '@/app/home/header/MainHeader'
+import FooterNav from './home/nav/FooterNav'
 
-const inter = Inter({ subsets: ['latin'] })
+const vazirFont = Vazirmatn({
+  subsets: ['latin', 'arabic'],
+  variable: '--font-vazir',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,9 +20,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>
-        <div className='bg-slate-700 text-white h-screen'>{children}</div>
+    <html lang='en' dir='rtl'>
+      <body
+        className={`${vazirFont.className} select-none min-h-screen bg-snow-white`}
+      >
+        <main className='container max-w-screen-lg mx-auto relative overflow-hidden'>
+          <MainHeader />
+          {children}
+          <FooterNav />
+        </main>
       </body>
     </html>
   )

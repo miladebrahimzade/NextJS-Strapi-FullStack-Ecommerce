@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const BlogPost = async () => {
-  return <div>page</div>
-}
+  return <div>page</div>;
+};
 
-export default BlogPost
+export default BlogPost;

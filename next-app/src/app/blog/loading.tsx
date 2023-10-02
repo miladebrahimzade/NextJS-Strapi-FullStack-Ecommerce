@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const BlogLoader = () => {
-  return <div>...loading</div>
-}
+  return <div>...loading</div>;
+};
 
-export default BlogLoader
+export default BlogLoader;
